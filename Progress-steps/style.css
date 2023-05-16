@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  margin-bottom: 37px;
+}
+.steps span {
+  color: #999;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: 20px;
+  margin: 0 38px;
+  border: 3px solid #ddd;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.5s;
+}
+.steps span:not(:first-child):after, .steps span:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  width: 76px;
+  height: 4px;
+  background-color: #ddd;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+.steps span:not(:first-child)::before {
+  width: 0;
+  left: -79px;
+  z-index: 1;
+  animation-duration: 0.3s;
+  background-color: #1b83e4 !important;
+}
+.steps span.active {
+  border-color: #1b83e4;
+}
+.steps span.active:not(:first-child)::before {
+  animation-name: afterWidth;
+  width: 76px;
+}
+@keyframes afterWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76px;
+  }
+}
+
+button {
+  background-color: #ddd;
+  border: none;
+  padding: 9px 30px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: not-allowed;
+}
+button.active {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1b83e4;
+}/*# sourceMappingURL=style.css.map */
