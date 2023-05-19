@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.left, .right {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    transition: 1.5s;
+    h2 {
+        margin-top: 200px;
+        z-index: 2;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 60px;
+    }
+    button {
+        z-index: 2;
+        margin-top: 20px;
+        background-color: transparent;
+        border: 4px solid #fff;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 23px 75px;
+        font-weight: 600;
+        font-size: 17px;
+        cursor: pointer;
+        &:hover {
+            color: #ff0000;
+            background-color: #fff;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.left {
+    background-image: url('./ps.jpg');
+    &::after {
+        background-color: #ff000080;
+    }
+}
+
+.right {
+    background-image: url('./xbox.jpg');
+    &::after {
+        background-color: #0026ff80;
+    }
+    button:hover {
+        color: #0026ff;
+        background-color: #fff;
+    }
+}

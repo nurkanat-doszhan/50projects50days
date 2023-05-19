@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background-color: #f5f3dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 22px;
+  font-size: 30px;
+}
+
+.content {
+  margin-bottom: 18px;
+  height: 200px;
+  width: 400px;
+  color: #fff;
+  background-color: #3882be;
+  font-size: 42px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
