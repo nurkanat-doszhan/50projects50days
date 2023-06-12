@@ -27,4 +27,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .5s;
+  &:nth-child(odd) {
+    transform: translateX(500%);
+  }
+  &:nth-child(even) {
+    transform: translateX(-500%);
+  }
+  &.show {
+    transform: translate(0);
+  }
 }
