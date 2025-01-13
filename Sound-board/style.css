@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a02ae4;
+  font-family: sans-serif;
+}
+
+audio {
+  display: none;
+}
+
+.buttons {
+  font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+}
+.buttons .audiobtn {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #fff;
+  border-radius: 7px;
+  width: 90px;
+  padding: 20px;
+  margin: 0 20px;
+  background-color: #661496;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttons .audiobtn:hover {
+  background-color: #4c0c70;
+}/*# sourceMappingURL=style.css.map */

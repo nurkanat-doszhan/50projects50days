@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a02ae4;
+  font-family: sans-serif;
+}
+
+audio {
+  display: none;
+}
+
+.buttons {
+  font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+  .audiobtn {
+    text-align: center;
+    user-select: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 90px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #661496;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background-color: #4c0c70;
+    }
+  }
+}

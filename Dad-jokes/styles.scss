@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #6d63f8;
+  font-family: sans-serif;
+}
+
+.jokes {
+  max-width: 800px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 17px;
+  h6 {
+    font-size: 18px;
+    color: #777;
+  }
+  p {
+    font-size: 28px;
+    line-height: 36px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #btn {
+    box-shadow: 0 5px 8px #57191960;
+    background-color: #9f55e4;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 50px 0;
+    border: none;
+    color: #fff;
+  }
+}
